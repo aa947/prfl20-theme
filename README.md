@@ -5,7 +5,8 @@
 
 
 ## Download the latest version ( Zip file ): 
-https://github.com/aa947/prfl20-theme
+https://github.com/aa947/prfl20-theme/archive/1.1.0.zip
+
 ## Theme website: 
 
 http://prfl20.byethost5.com/
