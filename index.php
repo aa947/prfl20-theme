@@ -241,7 +241,8 @@ get_header()
                         <?php
 
                         global $wpdb;
-                        $projects = $wpdb->get_results("SELECT * FROM wp_projects");
+                        $table_name = $wpdb->prefix . "projects";
+                        $projects = $wpdb->get_results("SELECT * FROM $table_name");
                         foreach ($projects as $project) {
                         ?>
 
@@ -347,7 +348,8 @@ get_header()
                     <?php
 
                     global $wpdb;
-                    $row = $wpdb->get_results("SELECT * FROM wp_education");
+                    $table_name = $wpdb->prefix . "education";
+                    $row = $wpdb->get_results("SELECT * FROM $table_name");
 
 
                     foreach ($row as $doc) {
@@ -381,7 +383,8 @@ get_header()
                     <?php
 
                     global $wpdb;
-                    $row = $wpdb->get_results("SELECT * FROM wp_certificates");
+                    $table_name = $wpdb->prefix . "certificates";
+                    $row = $wpdb->get_results("SELECT * FROM $table_name");
                     foreach ($row as $doc) {
                     ?>
 
@@ -424,7 +427,8 @@ get_header()
                         <?php
 
                         global $wpdb;
-                        $row = $wpdb->get_results("SELECT * FROM wp_skills");
+                        $table_name = $wpdb->prefix . "skills";
+                        $row = $wpdb->get_results("SELECT * FROM $table_name");
                         foreach ($row as $doc) {
                         ?>
 
@@ -556,7 +560,8 @@ get_header()
             <?php
 
             global $wpdb;
-            $row = $wpdb->get_results("SELECT * FROM wp_reviews");
+            $table_name = $wpdb->prefix . "reviews";
+            $row = $wpdb->get_results("SELECT * FROM $table_name");
             foreach ($row as $doc) {
             ?>
 

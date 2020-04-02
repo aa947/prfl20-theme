@@ -7,7 +7,8 @@ get_header()
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
     global $wpdb;
-    $pr = $wpdb->get_results("SELECT * FROM wp_certificates WHERE id = $id LIMIT 1");
+    $table_name = $wpdb->prefix . "certificates";
+    $pr = $wpdb->get_results("SELECT * FROM $table_name WHERE id = $id LIMIT 1");
   
     $name = $pr[0]->name;
     $provider = $pr[0]->provider;
