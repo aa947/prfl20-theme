@@ -18,7 +18,8 @@ get_header()
             <?php
 
             global $wpdb;
-            $row = $wpdb->get_results("SELECT * FROM wp_education");
+            $table_name = $wpdb->prefix . "education";
+            $row = $wpdb->get_results("SELECT * FROM $table_name");
             foreach ($row as $doc) {
             ?>
 
