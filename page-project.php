@@ -7,7 +7,8 @@ get_header()
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
     global $wpdb;
-    $pr = $wpdb->get_results("SELECT * FROM wp_projects WHERE id = $id LIMIT 1");
+    $table_name = $wpdb->prefix . "projects";
+    $pr = $wpdb->get_results("SELECT * FROM $table_name WHERE id = $id LIMIT 1");
     // if (!$pr) {
     //     die('No record with id: ' . $id);
     // }

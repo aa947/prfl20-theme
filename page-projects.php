@@ -14,7 +14,8 @@ get_header()
             <?php
 
             global $wpdb;
-            $projects = $wpdb->get_results("SELECT * FROM wp_projects");
+            $table_name = $wpdb->prefix . "projects";
+            $projects = $wpdb->get_results("SELECT * FROM $table_name");
             foreach ($projects as $project) {
             ?>
 
