@@ -3,6 +3,7 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) ![](https://david-dm.org/aa947/prfl20.svg) 
 [![version](https://img.shields.io/badge/version-1.1.2-blue)](#)
 
+![](https://dl.dropbox.com/s/xgylqorusxlz30t/screenshot-ami.responsivedesign.is-2020.04.16-15_46_23.png?dl=0)
 
 
 ## Download the latest version ( Zip file ): 
